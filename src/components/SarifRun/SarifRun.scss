@@ -1,0 +1,37 @@
+.sarif-run
+{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #ddd;
+
+    &__driver
+    {
+        .driver
+        {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 1rem;
+            
+            &__name
+            {
+                color: #000;
+                font-weight: bold;
+
+                &-label {
+                    font-weight: normal;
+                    margin-right: .5rem;
+                }
+            }
+
+            &__version
+            {
+                color: #000000aa;
+                font-size: .75rem;
+                margin-left: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.sarif-statistics
+{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #999;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #ddd;
+
+    &__header
+    {
+        font-weight: bold;
+        border-bottom: 1px solid #77777770;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    table
+    {
+        width: 100%;
+        border: none;
+        border-spacing: 0;
+        border-collapse: separate;
+
+        tr
+        {
+            cursor: pointer;
+            border: none;
+
+            &:hover
+            {
+                background: #efefef;
+            }
+
+            &.selected
+            {
+                font-weight: bold;
+                color: #800000;
+            }
+
+            td
+            {
+                padding: 3px 5px;
+                border: none;
+            }
+        }
+    }
+
+    &__category-label
+    {
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__category-value
+    {
+        text-align: right;
+        font-weight: bold;
+    }
+}
